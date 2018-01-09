@@ -3,7 +3,7 @@ const express = require('express');
 var todoList = require('../controllers/todoListController')
 const router = express.Router();
 
-router.get('/', todoList.list_alll_tasks)
+router.get('/', todoList.list_all_tasks)
     .post('/', todoList.create_a_task);
 
 router.get('/:id', todoList.read_a_task)
